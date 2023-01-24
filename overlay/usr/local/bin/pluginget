@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Very simple script to return the default passwords created during
+# installation
+case $1 in
+	dbname) cat /root/dbname ;;
+	dbuser) cat /root/dbuser ;;
+	dbpassword) cat /root/dbpassword ;;
+	mfuser) cat /root/mfuser ;;
+	mfpassword) cat /root/mfpassword ;;
+esac

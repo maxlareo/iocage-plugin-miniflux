@@ -1,0 +1,36 @@
+{
+	"servicerestart":"service miniflux restart",
+	"serviceget": "/usr/local/bin/pluginget",
+	"options": {
+		"dbname": {
+			"type": "string",
+			"name": "Database Name",
+			"description": "Database to use for Miniflux setup",
+			"readonly": true
+		},
+		"dbuser": {
+			"type": "string",
+			"name": "Database Username",
+			"description": "Username to use for Miniflux Database setup",
+			"readonly": true
+		},
+		"dbpassword": {
+			"type": "string",
+			"name": "Database Password",
+			"description": "Password to use for Miniflux Database setup",
+			"readonly": true
+		},
+		"mfuser": {
+			"type": "string",
+			"name": "Miniflux Username",
+			"description": "Default Miniflux administrator username",
+			"readonly": true
+		},
+		"mfpassword": {
+			"type": "string",
+			"name": "Miniflux Admin Password",
+			"description": "Default Miniflux administrator password",
+			"readonly": true
+		}
+	}
+}
