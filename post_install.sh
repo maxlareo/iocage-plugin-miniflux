@@ -4,6 +4,7 @@ set -eu
 
 # Enable the necessary services
 sysrc -f /etc/rc.conf postgresql_enable="YES"
+sysrc -f /etc/rc.conf postgresql_initdb_flags="--encoding=utf-8 --lc-collate=C --auth=trust"
 sysrc -f /etc/rc.conf miniflux_enable="YES"
 
 # Start the service
